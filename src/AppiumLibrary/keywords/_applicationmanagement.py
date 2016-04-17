@@ -220,3 +220,6 @@ class _ApplicationManagementKeywords(KeywordGroup):
     def _rotate(self, orientation):
         driver = self._current_application()
         driver.orientation = orientation
+    
+    def open_notification_bar(self):
+        self._current_application().open_notifications()
